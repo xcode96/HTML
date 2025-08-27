@@ -2,7 +2,7 @@
 {
   "name": "Wxmp",
   "version": "1.0",
-  "description": "微信公众账号发文章优化文章插件",
+  "description": "WeChat Official Account Markdown Editor",
   "icons": { "128": "img/icon.png" },
   "permissions": ["*://*/*","declarativeContent","tabs", "unlimitedStorage"],
   "browser_action": {
