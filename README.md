@@ -1,41 +1,53 @@
-# Wxmp
+Wxmp
 
-chrome 小插件，优化在微信公众账号中发文章，因复制粘贴带过去的`font-family` CSS 样式，导致被微信过滤样式全无。使用此插件删除提交文章上所有HTML节点上的`font-family`，让复制过去的样式保持一致。  
+A Chrome extension that optimizes posting articles in WeChat Official Accounts.
+When copying and pasting, the font-family CSS styles are carried over, which get filtered out by WeChat and result in broken formatting.
+This extension removes the font-family style from all HTML nodes before submission, so that the pasted styles remain consistent.
 
-目前删除这些标签上的`font-family`样式
+Currently, it removes font-family styles from the following tags:
 
-> `code`,`pre`,`h1`,`h2`,`h3`,`h4`,`h5`,`h6`,`p`,`div`,`span`
+code, pre, h1, h2, h3, h4, h5, h6, p, div, span
 
-![界面预览](https://raw.githubusercontent.com/jaywcjlove/wxmp/master/wxmq.png)
+Features Implemented
 
+ Remove font-family
 
-## 已经实现功能
+ Code highlight area has background color
 
-- [x] 过滤 `font-family`；
-- [x] 代码高亮区域有背景颜色；
-- [x] 代码高亮区域有横向滚动条强制不换行；
-- [x] 增加iOS滚动滚动弹性；
-- [ ] 添加设置标题工具；
-- [ ] 添加字段高亮工具；
-- [ ] 添加删除线工具，如：<del>删除线</del>；
+ Code highlight area has horizontal scrollbars (forces no line wrapping)
 
-# 直接安装
+ Adds iOS elastic scrolling
 
-1. 下载扩展程序[Wxmp.crx](https://github.com/jaywcjlove/wxmp/releases) 文件
-2. 在chrome里面器地址输入`chrome://extensions/` 打开插件界面
-3. 将`Wxmp.crx`文件拖入chrome浏览器的扩展程序列表中
+ Add title-setting tool
 
-# 开发模式插件安装 
+ Add text highlighting tool
 
-1. 下载文件压缩包解压
-2. 在chrome里面器地址输入`chrome://extensions/` 打开插件界面
-3. 点击`加载已解压的扩展程序...` 
-4. 选择插件所在的目录
+ Add strikethrough tool, e.g. <del>strikethrough</del>
 
+Direct Installation
 
-# 使用方法
+Download the extension file Wxmp.crx
 
-1. 打开微信公众平台，新建图文消息，复制文章到编辑器中
-2. 在右上角点击微信图标
-3. 点击弹出的模态框上的删除按钮
-4. 如果成功会在按钮后面提示`更改成功！！`
+In Chrome, go to chrome://extensions/
+
+Drag the Wxmp.crx file into the Extensions page
+
+Developer Mode Installation
+
+Download and unzip the package
+
+In Chrome, go to chrome://extensions/
+
+Click Load unpacked extension...
+
+Select the plugin’s directory
+
+Usage
+
+Open the WeChat Official Accounts platform, create a new article, and paste your content into the editor
+
+Click the WeChat icon in the top-right corner
+
+In the pop-up modal, click the Delete button
+
+If successful, a message will appear after the button: Change successful!!
